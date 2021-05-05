@@ -1,0 +1,370 @@
+$bg: #302C3A
+$secondColor: #1F2022
+$fontColor: #fff
+$fontColorDark: #b6b6b6
+html, body
+  padding: 0
+  margin: 0
+  font-family: Roboto
+  font-size: 18px
+  color: $fontColor
+  background: $bg
+a
+  color: inherit
+  text-decoration: none
+
+*
+  box-sizing: border-box
+  z-index: 2
+
+button
+  background: $secondColor
+  border: none
+  font-size: 1em
+  border-radius: 10px
+  font-family: Roboto
+  color: $fontColor
+  padding: 22px 37px
+
+// .container
+//   padding: 0 calc(50% - 590px)
+
+.container
+  padding: 0 15px
+
+@media (min-width: 575.98px)
+  .container
+    padding: 0 calc(50% - 270px)
+
+@media (min-width: 767.98px)
+  .container
+    padding: 0 calc(50% - 360px)
+
+@media (min-width: 991.98px)
+  .container
+    padding: 0 calc(50% - 480px)
+
+@media (min-width: 1199.98px)
+  .container
+    padding: 0 calc(50% - 590px)
+
+.top-panel
+  width: 100vw
+  height: 100px
+  display: flex
+  flex-direction: row
+  justify-content: start
+  align-items: center
+
+.logo
+  width: 50px
+  height: 50px
+  text-shadow: 0 0 3px #000
+  font-size: 2rem
+  border-radius: 100%
+  background: $secondColor
+  display: flex
+  justify-content: center
+  align-items: center
+  font-weight: 700
+  font-style: 3rem
+  position: fixed
+  top: 20px
+  left: 20px
+
+.contacts
+  display: flex
+  flex-direction: row
+  align-items: center
+  @media screen and (max-width: 768px)
+    flex-direction: column-reverse
+
+.welcome
+  z-index: 1
+  position: relative
+  width: 50%
+  text-align: right
+  @media screen and (max-width: 768px)
+    width: 100%
+  h1
+    line-height: 0
+  button
+
+.profile-wrapper
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1
+
+.profile
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  z-index: 1
+  text-align: center
+  width: 230px
+  margin: 20px 20px
+  h4
+    font-size: 1.5rem
+    margin: 0
+  span
+    font-weight: 300
+    font-size: 0.7rem
+  *
+    z-index: inherit
+
+.profile-image
+  width: 213px
+  height: 213px
+  position: relative
+  border-radius: 100%
+  overflow: hidden
+  img
+    filter: contrast(1.8) saturate(0.8) brightness(1.1) grayscale(0.5)
+
+.social-links
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-evenly
+  width: 100%
+  height: 60px
+  i
+    width: 30px
+    height: 30px
+    background-size: contain
+
+.whatsapp
+  display: block
+  width: 24px
+  height: 24px
+  background-image: url('/images/social/whatsapp.svg')
+.telegram
+  display: block
+  width: 24px
+  height: 24px
+  background-image: url('/images/social/telegram.svg')
+.github
+  display: block
+  width: 24px
+  height: 24px
+  background-image: url('/images/social/github.svg')
+.vk
+  display: block
+  width: 24px
+  height: 24px
+  background-image: url('/images/social/vk.svg')
+
+.section
+  display: flex
+  flex-direction: row
+  width: 100vw
+  height: 100vh
+
+.page-headline
+  width: 40%
+  @media screen and ( max-width: 768px )
+    width: auto
+
+.services-list
+  width: 60%
+  position: relative
+
+.content
+  display: flex
+  align-items: center
+
+.services-swiper
+  width: 100%
+
+.service-card
+  background: $secondColor
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px
+  margin: 20px
+  width: 188px
+  h4
+    text-align: center
+    line-height: 1
+    padding: 0
+    margin: 20px 0 10px 0
+  p
+    font-size: 0.8rem
+    color: $fontColorDark
+
+.page-headline
+  display: flex
+  justify-content: center
+  align-items: center
+
+.service-card-icon
+  margin-top: 30px
+  background-repeat: no-repeat
+
+i.consult
+  display: block
+  width: 55px
+  height: 60px
+  background-image: url('/images/services/consult.svg')
+i.turnkey
+  display: block
+  width: 55px
+  height: 60px
+  background-image: url('/images/services/turnkey.svg')
+i.develop
+  display: block
+  width: 65px
+  height: 60px
+  background-image: url('/images/services/develop.svg')
+i.parsing
+  display: block
+  width: 55px
+  height: 60px
+  background-image: url('/images/services/parsing.svg')
+i.design
+  display: block
+  width: 55px
+  height: 60px
+  background-image: url('/images/services/design.svg')
+
+.works-slider
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+
+.works-slide
+  display: flex
+  justify-content: center
+  align-items: center
+  width: calc(100% / 3 - 60px)
+
+.works-list
+  width: 60%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  @media screen and (max-width: 768px)
+    width: calc(100% - 30px)
+  ul
+    width: 100%
+    padding: 0
+    margin: 0
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 5px 5px
+    @media screen and (max-width: 768px)
+      grid-template-columns: 1fr 1fr
+    li
+      list-style-type: none
+      display: flex
+      width: calc(100% - 10px)
+      height: 170px
+      background: $secondColor
+      margin: 10px
+      border-radius: 10px
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.5)
+      cursor: pointer
+      position: relative
+      overflow: hidden
+      img
+        object-fit: cover
+      &:hover
+        transition: .2s
+        transform: scale(1.02)
+        img
+          opacity: 0.3
+        h4
+          top: 50%
+      h4
+        text-align: center
+        position: absolute
+        padding: 0 5px
+        margin: 0
+        width: 100%
+        left: 50%
+        top: -100%
+        transform-origin: center
+        transform: translate(-50%,-50%)
+        transition: .2s
+
+.page-slide
+  overflow: auto
+
+.resume-slider
+  width: 60%
+
+.null-slider
+  height: 0
+
+  
+.resume
+  width: 60%
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 100px 20px
+  @media screen and (max-width: 768px)
+    width: 100%
+  h5
+    font-size: 0.9rem
+    padding: 0
+    margin: 0
+  p
+    font-size: 0.7rem
+    padding: 0
+    margin: 0
+
+.resume-aboutme
+  margin: 20px 0
+
+.resume-content-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+
+.resume-skills
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 20px 20px
+  // flex-direction: column
+  // flex-wrap: wrap
+
+.resume-slide
+  height: 50%
+
+@media screen and (max-width: 768px)
+  .section
+    flex-direction: column
+    padding-top: 100px
+    justify-content: flex-start
+    align-items: center
+  .services-list
+    width: 100%
+  .welcome
+    text-align: center
+
+
+#brief-form
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 20px
+  width: 500px
+  @media screen and ( max-width: 768px )
+    width: 100%
+  input, select, textarea
+    height: 40px
+    margin-bottom: 20px
+  input
+    width: 100%
+  textarea
+    height: 100px
