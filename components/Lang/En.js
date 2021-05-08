@@ -49,6 +49,25 @@ export default {
     resumeFrameworks: "Freameworks, libraries",
 
 
+
+   // BriefForm
+   briefComplete: "Proposal sended",
+   briefOrderTitle: "Service request",
+   briefName: "Name: ",
+   briefType: "Type: ",
+   briefTypeOption1: "Landing Page",
+   briefTypeOption2: "E-commerce",
+   briefTypeOption3: "Customization",
+   briefTypeOption4: "Data collection",
+   briefTypeOption5: "Other",
+   briefPhoneOrEmail: "Phone or email: ",
+   briefDescription: "Description: ",
+   briefSend: "Send",
+
+
+
+
+
     // Тэг хэд 
     headTitle: "Web-developer Tatarchenko Igor",
 

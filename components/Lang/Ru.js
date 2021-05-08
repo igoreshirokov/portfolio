@@ -49,6 +49,23 @@ export default {
     resumeFrameworks: "Freameworks, библиотеки",
 
 
+
+
+    // BriefForm
+    briefComplete: "Заявка создана",
+    briefOrderTitle: "Заявка на услуги",
+    briefName: "Имя: ",
+    briefType: "Тип: ",
+    briefTypeOption1: "Лендинг",
+    briefTypeOption2: "Интернет-магазин",
+    briefTypeOption3: "Настройка",
+    briefTypeOption4: "Сбор данных",
+    briefTypeOption5: "Другое",
+    briefPhoneOrEmail: "Телефон или электронная почта: ",
+    briefDescription: "Описание: ",
+    briefSend: "Отправить",
+
+
     // Тэг хэд 
     headTitle: "Веб-Разработчик Татарченко Игорь",
 
