@@ -33,6 +33,15 @@ export default {
     // slide 5
     servicesSlide5Title: "Дизайн",
     servicesSlide5Desc: "Графический дизайн, разработка UI/UX, дизайн печатной продукции",
+    
+    //
+    // Works
+    //
+    worksTitle: "Работы",
+    worksWork1: "Магазин UGG",
+    worksWork2: "Каталог обуви",
+    worksWork3: "Сайт ателье",
+    worksWork4: "Верстка лендинга портфолио",
     //
     // Cv
     resumeTitle: "Резюме",

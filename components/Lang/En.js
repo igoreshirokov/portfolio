@@ -33,6 +33,15 @@ export default {
     // slide 5
     servicesSlide5Title: "Design",
     servicesSlide5Desc: "Graphic design, UI / UX development, print design.",
+        
+    //
+    // Works
+    //
+    worksTitle: "Works",
+    worksWork1: "Shop UGG",
+    worksWork2: "Shoes catalogue",
+    worksWork3: "Atelier web-site",
+    worksWork4: "Layout landing page",
     //
     // Cv
     resumeTitle: "Resume",

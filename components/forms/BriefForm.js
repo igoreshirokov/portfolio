@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Lang from '../Lang/Lang'
 
 
@@ -18,18 +18,7 @@ export default function BriefForm() {
 
         setSended(!sended)
     }
-
-    if (sended) {
-        return (
-            <>
-                <div className="section">
-                    <div className="page-headline">
-                        <h2>{Lang().briefComplete}</h2>
-                    </div>
-                </div>
-            </>
-        )
-    }
+    
 
     function hundleChange(event) {
         event.preventDefault()
@@ -50,16 +39,24 @@ export default function BriefForm() {
 
 
     return (
-        <>
+        sended ? (
+            <>
+                <div className="section">
+                    <div className="page-headline">
+                        <h2>{Lang().briefComplete}</h2>
+                    </div>
+                </div>
+            </>
+        ) : <>
             <div className="section">
                 <div className="page-headline">
                     <h1>{Lang().briefOrderTitle}</h1>
                 </div>
-                <form onSubmit={hundleSubmit} onChange={hundleChange} id="brief-form">
+                <form onSubmit={hundleSubmit} id="brief-form">
                     <label>{Lang().briefName}</label>
-                    <input value={form.name} name="name" type="text" required></input>
+                    <input onChange={hundleChange} value={form.name} name="name" type="text" required></input>
                     <label>{Lang().briefType}</label>
-                    <select value={form.variant} >
+                    <select onChange={hundleChange} value={form.variant} >
                         <option>{Lang().briefTypeOption1}</option>
                         <option>{Lang().briefTypeOption2}</option>
                         <option>{Lang().briefTypeOption3}</option>
@@ -67,9 +64,9 @@ export default function BriefForm() {
                         <option>{Lang().briefTypeOption5}</option>
                     </select>
                     <label>{Lang().briefPhoneOrEmail}</label>
-                    <input value={form.phone} type="text" name="phone" required></input>
+                    <input onChange={hundleChange} value={form.phone} type="text" name="phone" required></input>
                     <label>{Lang().briefDescription}</label>
-                    <textarea value={form.desc} name="desc" required></textarea>
+                    <textarea onChange={hundleChange} value={form.desc} name="desc" required></textarea>
                     <button>{Lang().briefSend}</button>
                 </form>
             </div>

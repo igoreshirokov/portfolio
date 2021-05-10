@@ -53,7 +53,7 @@ export default function Home() {
           <Works />
         </SwiperSlide>
         <SwiperSlide
-          className="page-slide"
+          className="page-slide page-cv"
           data-hash="resume"
         >
           <Cv />
